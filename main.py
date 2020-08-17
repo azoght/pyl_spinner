@@ -6,11 +6,11 @@ pg.init()
 window = pg.display.set_mode((1000, 750))
 window.fill((255,0,0))
 pg.display.set_caption("Press Your Luck Spinner")
-pg.mixer_music.load("Press-Your-Luck.ogg")
+pg.mixer_music.load("files/Press-Your-Luck.ogg")
 pg.mixer_music.set_volume(0.75)
 pg.mixer_music.play(-1)
 
-font = pg.font.Font("Aganè 65 (Bold).ttf",80)
+font = pg.font.Font("files/Aganè 65 (Bold).ttf", 80)
 text = font.render("Press Your Luck!",True,(0,0,0))
 textRect = text.get_rect()
 textRect.center = (500,375)
@@ -34,13 +34,13 @@ counting = False
 money = 0
 whammies = 0
 
-Whammy = pg.image.load("Whammy.png")
+Whammy = pg.image.load("files/Whammy.png")
 whammy = pg.transform.scale(Whammy,(80,155))
 
 def playGif(frames: [], frame: int, x: int, y: int):
     global s
     s = False
-    fn = "ezgif-2-890a93be7cdd-gif-im/" + frames[frame][0]
+    fn = "files/ezgif-2-890a93be7cdd-gif-im/" + frames[frame][0]
     img = pg.image.load(fn)
     for a in range(frames[frame][1] * 50):
         window.blit(img, (x,y))
@@ -54,7 +54,7 @@ message = ""
 win_rect = text.get_rect()
 win_rect.center = (500, 200)
 
-smallfont = pg.font.Font("DejaVuSans.ttf",20)
+smallfont = pg.font.Font("files/DejaVuSans.ttf", 20)
 startbuttonText = smallfont.render("Start Spin",True,(0,0,0))
 texrect2 = startbuttonText.get_rect()
 texrect2.center = (438,490)
@@ -62,16 +62,16 @@ stopbuttonText = smallfont.render("Stop Spin",True,(0,0,0))
 texrect3 = stopbuttonText.get_rect()
 texrect3.center = (542,490)
 
-numFont = pg.font.Font("STIXGeneralBol.ttf", 60)
-numFontSmall = pg.font.Font("sans.ttf", 30)
+numFont = pg.font.Font("files/STIXGeneralBol.ttf", 60)
+numFontSmall = pg.font.Font("files/sans.ttf", 30)
 
 exText = numFontSmall.render("$1000000",True,(0,0,0))
 exRect = exText.get_rect()
 exRect.right = 1000
 
-spinFont = pg.font.Font("STIXGeneralBol.ttf", 30)
+spinFont = pg.font.Font("files/STIXGeneralBol.ttf", 30)
 
-spinsLeftFont = pg.font.Font("DejaVuSans.ttf",50)
+spinsLeftFont = pg.font.Font("files/DejaVuSans.ttf", 50)
 
 bank_rect = exRect
 
@@ -129,7 +129,7 @@ while run:
             if not themePlayed:
                 pg.mixer_music.fadeout(500)
                 themePlayed = True
-            pg.mixer_music.load("pyl-board2.wav")
+            pg.mixer_music.load("files/pyl-board2.wav")
             pg.mixer_music.set_volume(0.75)
             pg.mixer_music.play(-1)
             start = True
@@ -143,7 +143,7 @@ while run:
             pg.draw.rect(window, (0, 0, 255), (430, 625, 120, 120))
             window.blit(spinText, spinRect)
         else:
-            whammyIcon = pg.image.load("whammyicon.png")
+            whammyIcon = pg.image.load("files/whammyicon.png")
             whammy_icon = pg.transform.scale(whammyIcon, (120, 120))
             window.blit(whammy_icon, (430, 625))
 
@@ -158,7 +158,7 @@ while run:
 
         if reward == 0 and stop:
             pg.draw.rect(window, (255, 0, 0),exRect)
-            pg.mixer_music.load("Press-Your-Luck-Whammy.ogg")
+            pg.mixer_music.load("files/Press-Your-Luck-Whammy.ogg")
             pg.mixer_music.play()
             money = 0
             stop = False
@@ -229,7 +229,7 @@ while run:
                 GIF = False
 
     if not GIF and f == len(frames):
-        fn = "ezgif-2-890a93be7cdd-gif-im/" + frames[0][0]
+        fn = "files/ezgif-2-890a93be7cdd-gif-im/" + frames[0][0]
         img = pg.image.load(fn)
         pg.draw.rect(window, (255, 0, 0), (100, 150, img.get_width(), img.get_height()))
         window.blit(text, textRect)
