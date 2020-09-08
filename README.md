@@ -10,9 +10,7 @@ A pygame program that behaves like the classic 80s game show "Press Your Luck" (
 ## Setup
 
 ### To install
-```
-pip install -r requirements.txt
-```
+See pygame installation command below
 ### To run 
 Make sure you're within the directory of the module
 ```
