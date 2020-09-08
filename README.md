@@ -7,6 +7,22 @@
 A pygame program that behaves like the classic 80s game show "Press Your Luck" (which was rebooted again in 2019).
 
 ---
+## Setup
+
+### To install
+```
+pip install -r requirements.txt
+```
+### To run 
+Make sure you're within the directory of the module
+```
+export PYTHONPATH=$PYTHONPATH:.
+```
+### To clone
+```
+git clone https://github.com/azoght/pyl_spinner
+```
+---
 ## How to play
 
 Click "Start Spin", wait, and click "Stop Spin" when you think you've landed on your lucky prize!
