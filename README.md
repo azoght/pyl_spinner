@@ -23,7 +23,7 @@ git clone https://github.com/azoght/pyl_spinner
 ---
 ## How to play
 
-![ScreenShot](https://raw.github.com/azoght/pyl_spinner/master/Screen Shot 2022-05-11 at 8.03.32 PM)
+![ScreenShot](https://raw.github.com/azoght/pyl_spinner/master/Screen Shot 2022-05-11 at 8.03.32 PM.png)
 
 Click "Start Spin", wait, and click "Stop Spin" when you think you've landed on your lucky prize!
 
