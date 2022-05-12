@@ -27,11 +27,17 @@ git clone https://github.com/azoght/pyl_spinner
 
 Click "Start Spin", wait, and click "Stop Spin" when you think you've landed on your lucky prize!
 
+![ScreenShot](https://raw.github.com/azoght/pyl_spinner/master/spinning.png)
+
 This game uses **the power of random** to generate prizes. 
 
 Land on a blue square and you win some money...
 
+![ScreenShot](https://raw.github.com/azoght/pyl_spinner/master/got_money.png)
+
 ...but land on a *whammy* and your money goes down to zero! Like the original game's rules say, if you get four Whammies, your game stops. "Game over!" will be printed on the console.
+
+![ScreenShot](https://raw.github.com/azoght/pyl_spinner/master/got_whammy.png)
 
 The number of spins you get in a game is also random (unlike the original game where you answer questions to earn spins) and your spin count will show up on screen. You can hack this by changing the spins variable in main.py.
 
